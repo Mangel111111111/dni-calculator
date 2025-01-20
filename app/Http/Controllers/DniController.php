@@ -17,7 +17,9 @@ class DniController extends Controller
         ]);
 
         $dniNumber = $request->input('dniNumber');
+        
         $remainder = $dniNumber % 23;
+        
         $dniLetter = DniLetter::where('dniRemainder', $remainder)->first();
 
         if ($dniLetter) {
@@ -25,10 +27,12 @@ class DniController extends Controller
                 'dniNumber' => $dniNumber,
                 'dniLetter' => $dniLetter->letter,
             ]);
-        } else {
+        }
+        
+        if (!$dniLetter) {
             return response()->json([
                 'error' => 'No se pudo calcular la letra del DNI.',
-            ], 404);
+            ], 412);
         }
     }
 
