@@ -10,7 +10,7 @@ class DniLetter extends Model
 {
     use HasFactory;
 
-    protected $table = 'dniLetters';
+    protected $table = 'dni_letters';
 
     protected $fillable = ['dniRemainder', 'letter'];
 }
