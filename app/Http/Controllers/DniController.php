@@ -31,8 +31,8 @@ class DniController extends Controller
         
         if (!$dniLetter) {
             return response()->json([
-                'error' => 'No se pudo calcular la letra del DNI.',
-            ], 412);
+                'message' => 'No se pudo calcular la letra del DNI.',
+            ], 404);
         }
     }
 
