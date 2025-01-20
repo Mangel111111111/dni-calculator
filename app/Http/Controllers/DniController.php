@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DniLetter;
 use Illuminate\Http\Request;
 
 class DniController extends Controller
@@ -9,16 +10,14 @@ class DniController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function calculateDniLetter(Request $request)
+    public function calculateDni(Request $request)
     {
         $request->validate([
             'dniNumber' => 'required|integer|between:0,99999999',
         ]);
 
         $dniNumber = $request->input('dniNumber');
-        
         $remainder = $dniNumber % 23;
-        
         $dniLetter = DniLetter::where('dniRemainder', $remainder)->first();
 
         if ($dniLetter) {

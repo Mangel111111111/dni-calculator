@@ -7,16 +7,16 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('dniLetters', function (Blueprint $table) {
+        Schema::create('dni_letters', function (Blueprint $table) {
             $table->id();
             $table->integer('dniRemainder')->unique();
             $table->char('letter', 1);
             $table->timestamps();
-        });
+        });        
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('dniLetters');
+        Schema::dropIfExists('dni_letters');
     }
 };

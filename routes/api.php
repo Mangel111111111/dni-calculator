@@ -8,5 +8,4 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::resource('dniLetters', DniController::class);
-
+Route::post('/calculate-dni', [DniController::class, 'calculateDni']);

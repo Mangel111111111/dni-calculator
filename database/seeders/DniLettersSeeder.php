@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DniLettersSeeder extends Seeder
 {
@@ -18,7 +19,7 @@ class DniLettersSeeder extends Seeder
         ];
 
         foreach ($letters as $index => $letter) {
-            DB::table('dniLetters')->insert([
+            DB::table('dni_letters')->insert([
                 'dniRemainder' => $index,
                 'letter' => $letter,
             ]);
