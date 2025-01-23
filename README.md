@@ -113,6 +113,21 @@ If everything is configured correctly, tests should pass, and the coverage repor
 #### Coverage Folder:
 ![image]()
 
+## 📡🌐 DNI Letter Calculator API
+
+#### Create a new DNI
+
+```http
+POST /api/santa
+```
+
+#### Response:
+- **Status Code:** 201
+- **Content Type:** application/json
+
+#### Body: 
+| `dniNumber` | `integer` |  Id of the gender of the kid  |
+| `dniLetter` | `integer` |  Id of the country of the kid  |
 
 ## ✍️🙍 Author
 **Miguel Angel García:**  [![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?style=flat-square&logo=github)](https://github.com/Mangel111111111)
