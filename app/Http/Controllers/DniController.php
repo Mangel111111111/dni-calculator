@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 
 class DniController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function calculateDni(Request $request)
     {
         $request->validate([
@@ -27,12 +25,6 @@ class DniController extends Controller
                 'dniNumber' => $dniNumber,
                 'dniLetter' => $dniLetter->letter,
             ]);
-        }
-        
-        if (!$dniLetter) {
-            return response()->json([
-                'message' => 'No se pudo calcular la letra del DNI',
-            ], 404);
         }
     }
 
