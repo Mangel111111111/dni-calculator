@@ -124,11 +124,11 @@ POST /api/calculate-dni
 ```
 
 #### Response:
-- **Status Code:** 201
+- **Status Code:** 200
 - **Content Type:** application/json
 
 #### Body: 
-| `dniNumber` | `integer` | **Required**. A valid 8-digit integer representing the number part of the DNI  |
+| `Accept` | `application/json` | **Required**. A valid 8-digit integer representing the number part of the DNI  |
 
 ## ✍️🙍 Author
 **Miguel Angel García:**  [![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?style=flat-square&logo=github)](https://github.com/Mangel111111111)
