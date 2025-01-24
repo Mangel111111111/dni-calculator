@@ -2,6 +2,8 @@
 
 This project aims to develop a console application that calculates the letter of the Spanish DNI (Documento Nacional de Identidad) based on a given number. The application ensures that users can easily and accurately determine the corresponding letter for their DNI number.
 
+![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724886/Captura_de_pantalla_2025-01-24_142110_wseeus.png)
+
 ---
 ## Overview
 
@@ -108,17 +110,17 @@ With the following command we run the tests and we will also generate a coverage
 If everything is configured correctly, tests should pass, and the coverage report will show `100%` coverage.
 
 #### Test Summary:
-![image]()
+![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724424/Captura_de_pantalla_2025-01-24_140858_qzlnoz.png)
 
 #### Coverage Folder:
-![image]()
+![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724424/Captura_de_pantalla_2025-01-24_140912_px6gp3.png)
 
 ## 📡🌐 DNI Letter Calculator API
 
 #### Create a new DNI
 
 ```http
-POST /api/santa
+POST /api/calculate-dni
 ```
 
 #### Response:
@@ -126,8 +128,7 @@ POST /api/santa
 - **Content Type:** application/json
 
 #### Body: 
-| `dniNumber` | `integer` |  Id of the gender of the kid  |
-| `dniLetter` | `integer` |  Id of the country of the kid  |
+| `dniNumber` | `integer` | **Required**. A valid 8-digit integer representing the number part of the DNI  |
 
 ## ✍️🙍 Author
 **Miguel Angel García:**  [![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?style=flat-square&logo=github)](https://github.com/Mangel111111111)
