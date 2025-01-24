@@ -113,7 +113,7 @@ If everything is configured correctly, tests should pass, and the coverage repor
 ![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724424/Captura_de_pantalla_2025-01-24_140858_qzlnoz.png)
 
 #### Coverage Folder:
-![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724424/Captura_de_pantalla_2025-01-24_140912_px6gp3.png)
+![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737727840/Captura_de_pantalla_2025-01-24_140912_b3swp7.png)
 
 ## 📡🌐 DNI Letter Calculator API
 
