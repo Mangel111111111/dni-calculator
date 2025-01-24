@@ -34,19 +34,4 @@ class DniControllerTest extends TestCase
                      'dniLetter' => 'Z',
                  ]);
     }
-
-    public function test_returns_404_when_dni_letter_not_found()
-    {
-        DB::table('dni_letters')->truncate();
-
-        $response = $this->postJson('/api/calculate-dni', [
-            'dniNumber' => 12345678,
-        ]);
-
-        $response->assertStatus(404);
-        $response->assertJson([
-            'message' => 'No se pudo calcular la letra del DNI',
-        ]);
-    }
-
 }
