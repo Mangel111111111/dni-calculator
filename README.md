@@ -110,7 +110,7 @@ With the following command we run the tests and we will also generate a coverage
 If everything is configured correctly, tests should pass, and the coverage report will show `100%` coverage.
 
 #### Test Summary:
-![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737724424/Captura_de_pantalla_2025-01-24_140858_qzlnoz.png)
+![image](https://res.cloudinary.com/del1j3jge/image/upload/v1738666523/Captura_de_pantalla_2025-02-04_115435_nkx2sn.png)
 
 #### Coverage Folder:
 ![image](https://res.cloudinary.com/del1j3jge/image/upload/v1737727840/Captura_de_pantalla_2025-01-24_140912_b3swp7.png)
